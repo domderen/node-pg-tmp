@@ -1,8 +1,8 @@
 {
-  "name": "pg-tmp",
-  "version": "0.1.0",
+  "name": "@domderen/pg-tmp",
+  "version": "0.1.6",
   "license": "ISC",
-  "repository": "LinusU/node-pg-tmp",
+  "repository": "domderen/node-pg-tmp",
   "scripts": {
     "test": "standard && mocha"
   },

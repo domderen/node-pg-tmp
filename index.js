@@ -4,13 +4,14 @@ const url = require('url')
 
 const bin = path.join(__dirname, 'pg_tmp.sh')
 
-module.exports = function pgTmp (setEnvironment, opts = []) {
+module.exports.default = function pgTmp (setEnvironment, opts = []) {
   setEnvironment = (setEnvironment == null ? true : setEnvironment)
 
   return execa.stdout(bin, opts).then((connection) => {
     const parsed = url.parse(connection, true)
 
     const result = {
+      connection,
       host: parsed.query.host,
       user: process.env.USER,
       password: '',

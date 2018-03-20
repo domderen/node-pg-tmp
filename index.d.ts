@@ -1,10 +1,9 @@
 interface ConnectionOptions {
+  connection: string;
   host: string;
   user: string;
   password: string;
   database: string;
 }
 
-function pgTmp(setEnvironment?: boolean, opts?: string[]): Promise<ConnectionOptions>
-
-export = pgTmp
+export default function pgTmp(setEnvironment?: boolean, opts?: string[]): Promise<ConnectionOptions>
