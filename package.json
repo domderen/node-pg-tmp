@@ -1,6 +1,6 @@
 {
   "name": "@domderen/pg-tmp",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "license": "ISC",
   "repository": "domderen/node-pg-tmp",
   "scripts": {
